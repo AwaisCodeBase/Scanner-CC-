@@ -1,9 +1,3 @@
-Scanner-CC-/
-├── scanner/             # Core scanner logic (scanner.cpp, headers, etc.)
-├── main.cpp             # Entry point
-├── CMakeLists.txt       # (if using CMake)
-└── README.md            # You're here
-
 # 🛡️ Scanner-CC++
 
 A fast, minimal, and modular file scanner written in modern C++. Built for performance, extensibility, and clean CLI interaction.
