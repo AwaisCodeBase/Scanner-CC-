@@ -1,0 +1,61 @@
+@This is program in AEX language
+@@Making Compiler 
+for AEX programming language@@
+
+@This is user defined function
+FUN sum(INT _a ~ INT _b): INT
+{
+	OUTPUT: _a + _b.
+
+  RETURN: _a + _b.
+}
+
+@This is our main function
+FUN MAIN() 
+{
+
+  @Declaration
+  INT _no.
+  
+  @Input 
+  INPUT: _no.
+
+  @Output
+  OUTPUT: _no.
+
+  @Declaration & Initilization
+  CONST INT _x = 5.
+  FLT _y = 10.5.
+  STR _char = “A”.
+  STR _name = "Compiler”.
+
+  @Condition
+  IF (_x > 5)
+  {
+      OUTPUT: "X is greater than 5”.
+  }
+  EL @else statement
+  {
+      OUTPUT: "X is not greater than 5”.
+  }
+
+  @for loop
+  FOR(INT _i = 5. _i >= 0. _i--)
+  {
+      OUTPUT: _i.
+  }
+
+  @while loop
+  WHILE (_x < 10)
+  {
+      _x = _x + 1.
+  }
+
+  @ 1D Array Declaration and Initilization
+  INT _arr[5] = {1, 2, 3, 4, 5}.   
+  
+  @ 2D Array Declaration and Initilization
+  INT _matrix[2,2] = {{1,2},
+                      {3,4}}.
+
+}

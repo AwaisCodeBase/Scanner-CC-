@@ -1,0 +1,66 @@
+@@
+                        AEX Full Feature Program
+                        Written by: Awais & Talha & Ali
+                        Purpose: Demonstrates all core components
+                    @@
+
+                    FUN isEven(INT num) : BOOL {
+                        RETURN: (_num % 2) == 0.
+                    }
+
+                    FUN square(INT _n) : INT {
+                        RETURN: _n * _n.
+                    }
+
+                    FUN greet(STR _name) {
+                        OUTPUT: "Hello, ".
+                        OUTPUT: _name.
+                    }
+
+                    FUN MAIN() {
+                        @ Variable declarations
+                        CONST INT _limit = 5.
+                        INT _i = 0.
+                        STR _name = "Awais".
+                        FLT _score = 88.5.
+                        BOOL _status = TRUE.
+
+                        @ Simulated input and output
+                        OUTPUT: "Program Start.".
+                        greet(_name).
+
+                        @ 1D array
+                        INT _numbers[5] = {1, 2, 3, 4, 5}.
+
+                        @ FOR loop
+                        FOR(INT _j = 0. _j < _limit. _j++) {
+                            OUTPUT: "Current number:".
+                            OUTPUT: _numbers[_j].
+
+                            INT _sq = square(_numbers[_j]).
+                            OUTPUT: "Square:".
+                            OUTPUT: _sq.
+
+                            @ IF/ELIF/EL example
+                            IF (_sq > 20)
+                                OUTPUT: "High square value.".
+                            ELIF (_sq == 16)
+                                OUTPUT: "Sweet sixteen square!".
+                            EL
+                                OUTPUT: "Normal square.".
+                        }
+
+                        @ WHILE loop
+                        WHILE (_i < _limit) {
+                            BOOL _evenCheck = isEven(_numbers[_i]).
+                            IF (_evenCheck)
+                                OUTPUT: "Even number detected.".
+                            EL
+                                OUTPUT: "Odd number detected.".
+                            _i = _i + 1.
+                        }
+
+                        OUTPUT: "Final Score: ".
+                        OUTPUT: _score.
+                        OUTPUT: "Program Complete.".
+                    }
