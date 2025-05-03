@@ -1,3 +1,9 @@
+Scanner-CC-/
+├── scanner/             # Core scanner logic (scanner.cpp, headers, etc.)
+├── main.cpp             # Entry point
+├── CMakeLists.txt       # (if using CMake)
+└── README.md            # You're here
+
 # 🛡️ Scanner-CC++
 
 A fast, minimal, and modular file scanner written in modern C++. Built for performance, extensibility, and clean CLI interaction.
@@ -45,3 +51,20 @@ mkdir build && cd build
 cmake ..
 make
 ./scanner
+
+
+
+git clone https://github.com/AwaisCodeBase/Scanner-CC-.git
+cd Scanner-CC-
+g++ -std=c++17 -I./scanner main.cpp scanner/scanner.cpp -o scanner
+./scanner
+./scanner /home/user/documents
+
+Scanner-CC-/
+├── main.cpp               # Entry point
+├── scanner/
+│   ├── scanner.h          # Scanner class/interface
+│   └── scanner.cpp        # Scanner implementation
+├── CMakeLists.txt         # (if using CMake)
+└── README.md              # This file
+
